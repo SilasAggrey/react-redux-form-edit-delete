@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { v4 as uuid } from "uuid";
 import firebase from "../firebase/config";
-import "../Edit/App.css";
 import { FormControl, FormGroup, FormLabel } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 

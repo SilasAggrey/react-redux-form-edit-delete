@@ -43,20 +43,28 @@ const User = (props) => {
     <>
       <div className="d-flex justify-content-center">
         <Card style={{ width: "18rem" }}>
-          <Card.Body>
-            <Card.Title>{user.name}</Card.Title>
-            <Card.Text>{user.email}</Card.Text>
-            <Card.Text>{user.gen}</Card.Text>
-            <Button
-              onClick={() => setIsShowing(true)}
-              variant="outline-primary"
-              size="lg"
-            >
-              Edit
-            </Button>
-            <Button variant="outline-danger" size="lg" onClick={handleDelete}>
-              Delete
-            </Button>
+          <Card.Body className="justify-content-between">
+            <Card.Title className="text-primary">
+              Name:<span className="text-dark">{user.name}</span>
+            </Card.Title>
+            <Card.Text className="text-primary">
+              Email:<span className="text-dark">{user.email}</span>
+            </Card.Text>
+            <Card.Text className="text-primary ">
+              Gen:<span className="text-dark">{user.gen}</span>
+            </Card.Text>
+            <div className="d-flex justify-content-between">
+              <Button
+                onClick={() => setIsShowing(true)}
+                variant="outline-primary"
+                size="lg"
+              >
+                Edit
+              </Button>
+              <Button variant="outline-danger" size="lg" onClick={handleDelete}>
+                Delete
+              </Button>
+            </div>
           </Card.Body>
         </Card>
       </div>
