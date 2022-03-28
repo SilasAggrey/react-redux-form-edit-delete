@@ -42,8 +42,8 @@ const User = (props) => {
   return (
     <>
       <div className="d-flex justify-content-center">
-        <Card style={{ width: "18rem" }}>
-          <Card.Body className="justify-content-between">
+        <Card style={{ width: "20rem" }}>
+          <Card.Body className="justify-content-between fs-5">
             <Card.Title className="text-primary">
               Name:<span className="text-dark">{user.name}</span>
             </Card.Title>
