@@ -43,7 +43,7 @@ const Register = () => {
         </h1>
         <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
+            <Form.Label className="text-black">Email address</Form.Label>
             <Form.Control
               type="email"
               placeholder="Enter email"
@@ -56,7 +56,7 @@ const Register = () => {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
+            <Form.Label className="text-black">Password</Form.Label>
             <Form.Control
               type="password"
               placeholder="Password"
@@ -68,7 +68,7 @@ const Register = () => {
             Submit
           </Button>
 
-          <p>
+          <p className="text-black">
             Already have an account? <Link to="/login">Login</Link>
           </p>
         </Form>
